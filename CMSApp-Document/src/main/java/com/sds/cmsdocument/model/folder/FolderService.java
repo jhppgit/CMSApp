@@ -5,6 +5,8 @@ import java.util.List;
 import com.sds.cmsdocument.domain.Folder;
 import com.sds.cmsdocument.exception.FolderException;
 
+// 너무 조건별로 나눠뒀다.
+// 가벼운거 하나, 무거운거 하나, 문서포함 하나 이런식으로 가자.
 public interface FolderService {
 	
 	public int moveDirectory(final int documentIdx, final int targetFolderIdx);

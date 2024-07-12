@@ -81,6 +81,7 @@ import lombok.extern.slf4j.Slf4j;
 				List<Folder> parentFolderList = new ArrayList<>();
 				parentFolderList.add(folder);
 				List<DocumentVersion> documentList = documentService.selectAllOrigin();
+				// documentList.clear();
 				model.addAttribute("documentListSelect", documentList);
 				model.addAttribute("folderIdx", folderIdx);
 				model.addAttribute("folder", folder);
